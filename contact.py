@@ -17,14 +17,13 @@ class Contact:
         if(self.l_name == other.l_name):
             if(self.f_name < other.f_name):
                 return True
-            else:
+            else: 
                 return False
         else:
             return True if self.l_name < other.l_name else False
     def __str__(self):
-        info = f"""
-{self.l_name}
-{self.f_name}
+        info = f"""{self.l_name}
+  {self.f_name}
 {self.phone}
 {self.address}
 {self.city}
@@ -32,4 +31,4 @@ class Contact:
 """
         return info
     def __repr__(self):
-        return f'{self.f_name},{self.l_name}, {self.phone}, {self.address}, {self.city}, {self.zip}'
+        return f'{self.f_name},{self.l_name},{self.phone},{self.address},{self.city},{self.zip}\n'

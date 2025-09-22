@@ -1,16 +1,19 @@
 from contact import Contact
 import check_input
 def write_file(contacts):
-    with open("addresses.txt") as file:
+    with open("addresses.txt", 'w') as file:
         for contact in contacts:
-            file.writelines(contact)
+            file.write(repr(contact))
 def read_file():
     contacts = []
     with open("addresses.txt") as file:
         line = file.readline()
         while len(line): 
-            contacts.append(line.split(','))
+            contactInfo = line.split(',')
+            contact = Contact(contactInfo[0], contactInfo[1], contactInfo[2], contactInfo[3], contactInfo[4], contactInfo[5].strip())
+            contacts.append(contact)
             line = file.readline()
+            
     contacts.sort()
     return contacts
 def get_menu_choice():
@@ -30,8 +33,9 @@ def main():
         match get_menu_choice():
             case 1: 
                 for index in range(len(contacts)):
-                    print(index, end=' ')
-                    print(contacts[index])
+                    print(index + 1, end='.')
+                    print(contacts[index], end ='')
+                    print()
             case 2: 
                 print("Enter new contact")
                 print("First Name: ",end='')
