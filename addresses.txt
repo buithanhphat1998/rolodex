@@ -1,4 +1,6 @@
 Elwood,Blues,555-7778,1060 West Addison Street,Chicago,99300
+Thanh Phat ,Bui,7147695120,11272 Palmwood Dr,GG,92840
+Thanh Long ,Bui,7147695266,11272 Palmwood Dr,GG,92840
 Archie,Bunker,555-3497,705 Hauser Street,Queens,11466
 Montgomery,Burns,555-9809,1000 Mammon Lane,Springfield,90122
 Richie,Cunningham,555-6748,565 Clinton Drive,Milwaukee,22939

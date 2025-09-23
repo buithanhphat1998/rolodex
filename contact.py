@@ -23,7 +23,7 @@ class Contact:
             return True if self.l_name < other.l_name else False
     def __str__(self):
         info = f"""{self.l_name}
-  {self.f_name}
+{self.f_name}
 {self.phone}
 {self.address}
 {self.city}
