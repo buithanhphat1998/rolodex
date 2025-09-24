@@ -10,6 +10,7 @@ contact objects. A contact has a name, phone number, address, city, and zip code
 initially read in from the file ‘addresses.txt’ and then are written back to the file when the
 program ends."""
 
+# import the Contact class and check_input module
 from contact import Contact
 import check_input
 
